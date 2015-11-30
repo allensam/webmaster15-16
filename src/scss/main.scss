@@ -1,0 +1,57 @@
+@import "mixins";
+@import "drones";
+@import "mvhs";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  color: #ecf0f1;
+  box-sizing: border-box;
+  /*background-image: url(background.gif);*/
+  /*background-size: cover;*/
+  /*background-position: bottom;*/
+  /*background-attachment: fixed;*/
+}
+
+.homebtnalign {
+  width: 100%;
+  text-align: center;
+  @include vertical-align();
+}
+
+.btn {
+  background: #3498db;
+  @include linear-gradient(#3498db, #2980b9);
+  @include border-radius(4px);
+  @include box-shadow(0, 1px, 1px, 0, #666666);
+  font-family: Arial;
+  font-size: 25px;
+  padding: 10px 20px 10px 20px;
+  border: solid #1f628d 1px;
+  text-decoration: none;
+  &:hover {
+    background: #3cb0fd;
+    @include linear-gradient(#3cb0fd, #3498db);
+    text-decoration: none;
+  }
+
+  &.btnred {
+    padding: 10px 13px 10px 13px;
+    background: #d93434;
+    @include linear-gradient(#d93434, #b82c3f);
+    border: solid #8c1f2d 1px;
+    &:hover {
+      background: #fc3c3c;
+      @include linear-gradient(#fc3c3c, #d93434);
+    }
+  }
+}

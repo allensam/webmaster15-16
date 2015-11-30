@@ -1,0 +1,34 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin linear-gradient($firstcolor, $secondcolor) {
+  background-image: -webkit-linear-gradient(top, $firstcolor, $secondcolor);
+  background-image: -moz-linear-gradient(top, $firstcolor, $secondcolor);
+  background-image: -ms-linear-gradient(top, $firstcolor, $secondcolor);
+  background-image: -o-linear-gradient(top, $firstcolor, $secondcolor);
+  background-image: linear-gradient(to bottom, $firstcolor, $secondcolor);
+}
+
+@mixin box-shadow($horizontal, $vertical, $blur, $spread, $color) {
+  -webkit-box-shadow: $horizontal $vertical $blur $spread $color;
+  -moz-box-shadow: $horizontal $vertical $blur $spread $color;
+  box-shadow: $horizontal $vertical $blur $spread $color;
+}
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin transform-style($style) {
+  -webkit-transform-style: $style;
+  -moz-transform-style: $style;
+  transform-style: $style;
+}
