@@ -1,15 +1,36 @@
+.thingtwo {
+  height: 50%;
+  width: 50%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+  text-align: center;
+  left: 20%;
+  background-color: white; }
+
 .top {
+  text-align: center;
   height: 100%;
   width: 100%;
   color: black; }
 
 .header {
-  height: 10%;
-  width: 100%; }
+  height: 20%;
+  width: 100%;
+  background-color: grey;
+  z-index: 10; }
 
 .info {
-  height: 90%;
-  width: 100%; }
+  height: 80%;
+  width: 100%;
+  background-color: white;
+  color: black; }
 
 .thing {
   position: fixed;
@@ -42,12 +63,19 @@
   height: 90%;
   width: 25%; }
 
+.card:hover {
+  background-color: rgba(250, 150, 150, 0.9); }
+
 p {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
+
+.nav {
+  height: 30px;
+  width: 100%; }
 
 * {
   margin: 0;
@@ -61,7 +89,7 @@ html, body {
   width: 100%;
   color: #ecf0f1;
   box-sizing: border-box;
-  background-image: url(img/drone.jpg);
+  background-image: url(img/drones.jpg);
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed; }

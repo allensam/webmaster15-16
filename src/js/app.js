@@ -30,9 +30,13 @@ website.config(function ($stateProvider, $urlRouterProvider, $locationProvider) 
             templateUrl: 'templates/drones.html',
             controller: 'dronesCtrl'
         })
-        .state('teststate', {
-            url: '/learn/test',
-            templateUrl: 'templates/test.html'
+        .state('techstate', {
+            url: '/learn/tech',
+            templateUrl: 'templates/tech.html'
+        })
+        .state('uses', {
+            url: '/learn/uses',
+            templateUrl: '/templates/uses.html'
         })
         .state('mvhs', {
             url: '/mvhs',
