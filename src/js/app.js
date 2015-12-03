@@ -27,7 +27,8 @@ website.config(function ($stateProvider, $urlRouterProvider, $locationProvider) 
         })
         .state('drones', {
             url: '/learn',
-            templateUrl: 'templates/drones.html'
+            templateUrl: 'templates/drones.html',
+            controller: 'dronesCtrl'
         })
         .state('mvhs', {
             url: '/mvhs',

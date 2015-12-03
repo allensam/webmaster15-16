@@ -1,3 +1,10 @@
+.thing {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  z-index: 5;
+}
 .spliter {
   padding-left: 100px;
   text-align: center;
